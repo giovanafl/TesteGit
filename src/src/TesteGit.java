@@ -25,12 +25,17 @@ public class TesteGit {
 		
 		int soma = 0;
 		int media = 0;
+		int menor = 0;
 		for (int a : notas) {
 			soma += a;
-			media = soma/5;		
+			media = soma/5;
+			if(a<6) {
+				menor++;
+			}
 		}
 		System.out.println("Soma das notas: " + soma);
 		System.out.println("A média das notas é de: " + media);
+		System.out.println("Quantidade de notas menores que 6: " + menor);
 		
 		Collections.sort(notas);
 		int alta = notas.get(notas.size()-1);
