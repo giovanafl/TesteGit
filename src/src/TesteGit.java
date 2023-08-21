@@ -23,11 +23,19 @@ public class TesteGit {
 		int soma = 0;
 		for (int a : notas) {
 			soma += a;
-			
 		}
 		System.out.println("Soma das notas: " + soma);
-		sc.close();
+
 		
+		int media = 0;
+		for (int m: notas) {
+			media = m/5;
+			
+		}
+		System.out.println("A média das notas é de: " + media);
+		
+		
+		sc.close();
 	}
 
 }
